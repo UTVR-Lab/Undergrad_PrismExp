@@ -1,0 +1,18 @@
+//////////Prism Experiment////////////
+
+Overview:
+In order to test how humans use motion in their visual field distinctly from visual direction (i.e. a percieved goal), we must seperate these two features. This experiment uses a prism manipulation (see Warren, 2001) to examine how humans compensate for inaccurate visual information through the use of the optic flow signal. We hypothesize subjects will walk in straighter paths during prism conditions as more structure is introduced into the environment.
+
+
+Trials: 
+Subjects will undergo 120 walking trials, consisting of walking from one end of a virtual room toward a red goal post at the other end of the room (7m path). Independant variables are Prism Induction (Control, Left Bias, Right Bias) and Environment Structure (No Structure, Walls, Floor, Full Room). Trials are randomized using Sampling-Without-Replacement.
+
+
+Data: 
+Subjects will have 7 points of tracking, including: Head, Chest, Back, Left Foot, Right Foot, Left Hand, Right Hand. 
+-- A configuration file is created at the start of the experiment, recording the subject name, date/time of experiment, list of possible conditions, and the full order of condition appearance by trial. 
+-- The data file will record time, framerate, trial number, and condition alongside frame-by-frame position and rotation of each of the body markers.
+
+
+Method:
+Subject starts in a neutral room simulating full structure condition. The instructor will then press 'play' to start the experiment. Only a starting area and goal post will be visible from the non-trial space. The trial will begin when the subject is standing within the starting area and looking at the goal post (3 second countdown). On trial start, the room will load in and the subject will walk to the goal post. On collision with the goal post, the trial will end and world will return to the non-trial state. A new start zone will appear in place of the original goal post, and a goal post in place of the original start zone. Subjects will then turn around, and being same routine. Upon completion of all 120 trials, the console outputs "End of Experiment."
